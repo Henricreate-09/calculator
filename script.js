@@ -42,6 +42,10 @@ function operate(operation, num1, num2) {
             result = num1 * num2;
             break;
         case '/':
+            if (num2 == 0) {
+                alert("Can't divide by zero!");
+                return 0;
+            }
             result = num1 / num2;
             break;
         
