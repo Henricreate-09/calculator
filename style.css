@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    display: flex; 
+    flex-direction: column;
+
+    align-items: center;
+}
+body {
+    background-color: rgb(41, 41, 41);
+
+    font-family: Roboto, Helvetica, sans-serif;
+}
+.container:focus {
+    border: none;
+    outline: none;
+}
+
+input[type=text] {
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: rgb(22, 22, 22);
+
+    height: 100dvh;
+    width: 100%;
+}
+#display-area {
+    display: flex;
+    flex-direction: column;
+}
+.num-display {
+    border: none;
+    background: rgb(12, 12, 12);
+    color: white;
+    
+    padding: 2rem 1rem;
+
+    text-align: right;
+}
+#display {
+    font-size: 3rem;
+}
+#expression {
+    padding: 1rem 1rem;
+    
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    color: gray;
+}
+
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+.numbers {
+    display: flex;
+    flex-direction: column;
+}
+.operations {
+    margin: 1rem 0;
+}
+
+.number-button {
+    width: 8rem;
+    height: 4.5rem;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+
+    border: none;
+    border-radius: 0.2rem;
+
+    margin: 0.2rem;
+
+    background-color: rgb(34, 34, 34);
+    color: white;
+
+    transition: 50ms;
+}
+.number-button:active {
+    background-color: rgb(28    , 28, 28);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.operation-button {
+    width: 6rem;
+    height: 5rem;
+
+    border-radius: 0.2rem;
+
+    font-size: 1.75rem;
+    font-weight: 700;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+
+    border: none;
+
+    background-color: rgb(255, 137, 28);
+    color: white;
+    
+    transition: 50ms;
+}
+.operation-button:active {
+    background-color: rgb(224, 119, 21);
+}
+
+
+.result-button {
+    width: 3rem;
+    height: 3rem;
+
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+
+    border: none;
+    border-radius: 0.2rem;
+
+    margin: 0.2rem;
+
+    background-color: rgb(110, 110, 110);
+    color: white;
+    
+    transition: 50ms;
+}
+.result-button:active {
+    background-color: rgb(99, 99, 99);
+}
